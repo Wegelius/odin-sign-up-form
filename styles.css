@@ -1,0 +1,134 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* This prevents any potential scrollbars */
+}
+
+.container {
+    display: flex;
+    
+    height: 100vh;
+    padding: 0 10%;
+}
+
+body {
+    background-color: black;
+}
+
+.splash {
+    /* background-color: rgba(0, 0, 0, 30); */
+    background-image: url('/assets/halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover;
+    flex-grow: 4;
+}
+
+.sign-up {
+    background-color: #f5f5f5;
+    flex-grow: 6;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.sign-up > div {
+	flex: 1;
+}
+
+.form label {
+  text-transform: uppercase;
+
+}
+
+.name, .password, .info {
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.form-group label {
+	display: block
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+}
+
+/* .form label,
+.form input {
+  display: block; 
+  margin-bottom: 10px; 
+} */
+
+.sign-up .form{
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5);
+}
+/* 
+.sign-up .buttons{
+
+} */
+
+.splash .logo {
+	color: white;
+}
+
+.logo {
+	margin-top: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: xx-large;
+	background-color: rgba(0, 0, 0, 0.5);
+	
+}
+
+.logo img {
+	width: auto; /* Maintain aspect ratio */
+	height: 200px;
+}
