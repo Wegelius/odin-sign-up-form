@@ -2,89 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Sign Up Form</title>
-  
-    <link rel="stylesheet" type="text/css" href="styles.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odin Sign Up Form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="splash">
-            <div class="logo">
-                <img src="assets/odin-lined.png" alt="ODIN Logo">
-                ODIN</div>
-        </div>
-        <div class="sign-up">
-           <div class="text">Sign up today to the Wegelius Corp. We promise
-            not to be evil and we definitely won't share your information.
-           </div>
-           <!-- <div class="form">
-            
-            <p>Let's do this!</p>
-            <div class="name">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="fname">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="lname">           
+  <div class="container">
+    <div class="splash">
+      <div class="logo">
+        <img src="assets/odin-lined.png" alt="ODIN Logo">
+        ODIN
+      </div>
+    </div>
+    <div class="sign-up">
+      <div class="text">
+        <p>Sign up today to the Odin Corp. We promise
+          not to be evil and we definitely won't share your information.</p>
+      </div>
+
+      <div class="form-div">
+        <form id="signup-form">
+          <p>Let's do this!</p>
+          <div class="name">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="fname">
             </div>
-            <div class="info">
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email">
-            <label for="phone">Phone Number</label>
-            <input type="text" id="phone" name="phone">
-            </div>
-            <div class="password">
-            <label for="password">Password</label>
-            <input type="text" id="password" name="password">
-            <label for="confirm-password">Confirm Password</label>
-            <input type="text" id="confirm-password" name="password">
-            </div>
-       
-           </div>  -->
-           
-           <div class="form">
-            <p>Let's do this!</p>
-            <div class="name">
-              <div class="form-group">
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="fname">
-              </div>
-              <div class="form-group">
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="lname">
-              </div>
-            </div>
-            <div class="info">
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email">
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="text" id="phone" name="phone">
-              </div>
-            </div>
-            <div class="password">
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input type="text" id="password" name="password">
-              </div>
-              <div class="form-group">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="text" id="confirm-password" name="password">
-              </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="lname">
             </div>
           </div>
-
-           <div class="buttons">
-            <button>Create Account</button>
-            <p> Already have an account? <a href="login.html">Log in</a></p>
+          <div class="info">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" name="phone">
+            </div>
+          </div>
+          <div class="password">
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" id="confirm-password" name="password" required>
+            </div>
             
-           </div>
-        </div>
+          </div>
+          <div class="password-error"></div>
+        </form>
+      </div>
+
+      <div class="buttons">
+        <input type="submit" value="Create Account" form="signup-form">
+        <p> Already have an account? <a href="login.html">Log in</a></p>
+      </div>
+      </form>
     </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
